@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><img src="logo.png">PT.Once Sejahtera</h1>
+        </div>
+        <div class="content">
+            <h1>Pembayaran Listrik</h1>
+                <div id="form"> </div><br>
+            <label>Nama : </label><br>
+            <input  type="text" id="nama" placeholder="Masukan Nama Anda" name="Nama">
+            <br>
+            <label>Kategori: </label><br>
+            <select id="kategori" name="kategori" size="1" >
+                <option value="sosial">Sosial</option>
+                <option value="rumah">Rumah</option>
+                <option value="industri">Industri</option>
+                <option value="apartemen">Apartemen</option>
+                <option value="villa">Villa</option>
+              </select>
+            <br>
+                <label>Jumlah Pemakaian: </label><br>
+                <input  type="number" id="hari" placeholder="0" name="hari">
+
+                <br>
+                    <input id="myButton" type="button" value="Lihat Tagihan" name="submit" onclick="tagihan()">
+
+            </form>
+            <h1 id="rincian"></h1>
+            <div id="data"></div>
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
